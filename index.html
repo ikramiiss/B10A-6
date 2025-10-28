@@ -1,11 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A-6</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    Hello
+    <header>
+        <nav class="w-11/12 mx-auto flex justify-between items-center py-5">
+            <div class="flex items-center gap-3 ">
+                <img class="h-6 w-6 object-cover" src="images/logo.webp" alt="Peddy logo">
+                <h1 class=" text-xl font-bold">Peddy</h1>
+            </div>
+            <div class="md:flex gap-8 md:gap-8  text-gray-600 items-center font-medium">
+                <button>Home</button>
+                <button>Shop</button>
+                <button>Contact</button>
+            </div>
+            <div>
+                <img class="cursor-pointer" src="https://img.icons8.com/win10/32/user-male-circle.png" alt="">
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <div class="flex flex-col items-center justify-center gap-5">
+            <h3 class="font-medium text-gray-700 mt-5">Bringing Families Together</h3>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 items-center text-center"> Your Path to
+                Adoption <br>Starts Here
+            </h1>
+
+
+            <h2 class="text-center font-extralight">It is a long established fact that a reader will be distracted by
+                the readable content of a page when looking <br class="hidden md:block "> at its layout. The point of
+                using Lorem Ipsum is that it has a.</h2>
+
+
+            <button class="font-bold text-white bg-[rgba(14,122,129,1)] py-3 px-3 rounded-lg">View More</button>
+
+
+            <img src="images/pet.webp" alt="">
+            <h1 class="font-extrabold mt-5 text-gray-950 text-4xl">Adopt Your Best Friend</h1>
+            <p class="font-medium text-gray-500 mb-5 mt-5 text-center">It is a long established fact that a reader will
+                be distracted by the readable content of a page <br class="hidden md:block "> when looking at its
+                layout. The point of using Lorem Ipsum is that it has a.</p>
+        </div>
+        <div id="categories" class="py-3 flex gap-5 justify-center">
+
+        </div>
+
+
+    </main>
+    <footer class="bg-black p-10  flex flex-col md:flex-row  md:p-20 justify-around text-white  ">
+        <div class="text-center md:text-left ">
+            <div class="flex items-center gap-3 mb-8 md:justify-start  justify-center ">
+                <img class="h-6 w-6 object-cover" src="images/logo.webp" alt="Peddy logo">
+                <h1 class=" text-xl font-bold">Peddy</h1>
+            </div>
+            <div class="space-y-2 text-gray-300">
+                <h3>Location: av. Washington 165, NY CA 54003</h3>
+                <h3>Phone: +31 85 964 47 25</h3>
+                <h3>Email: info@yourdomain.com</h3>
+                <h3>Openings hours: 9.00 AM - 5.00 PM</h3>
+            </div>
+            <div class="flex gap-5 mt-5 flex-row justify-center md:justify-start">
+                <img class="w-6 h-6" src="https://img.icons8.com/?size=48&id=118497&format=png" alt="">
+                <img class="w-6 h-6" src="https://img.icons8.com/?size=48&id=cMRBi0rI3iwb&format=png" alt="">
+                <img class="w-6 h-6" src="https://img.icons8.com/?size=80&id=omVNNE6wkyP7&format=png" alt="">
+                <img class="w-6 h-6" src="https://img.icons8.com/?size=80&id=BrU2BBoRXiWq&format=png" alt="">
+            </div>
+
+        </div>
+        <div class="mb-5 mt-6 flex  flex-col">
+            <h2 class="text-gray-300 mb-3 font-semibold text-xl text-center">Usefull Links</h2>
+            <button>Home</button>
+            <button>About us</button>
+            <button>Animals</button>
+            <button>Foundation</button>
+            <button>Contact</button>
+
+        </div>
+        <div class="flex flex-col gap-5">
+            <h2 class="font-semibold text-xl text-center">Drop a Message</h2>
+            <input class="px-2 py-2 rounded-md bg-gray-800" type="text" placeholder="Enter your Email">
+            <button class="px-2  py-2 bg-[rgba(14,122,129,1)] rounded-md">Subscribe </button>
+
+        </div>
+
+    </footer>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
