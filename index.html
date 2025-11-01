@@ -40,7 +40,12 @@
                 using Lorem Ipsum is that it has a.</h2>
 
 
-            <button class="font-bold text-white bg-[rgba(14,122,129,1)] py-3 px-3 rounded-lg">View More</button>
+            
+                <button  onclick="scrollToCards()" class="font-bold text-white bg-[rgba(14,122,129,1)] py-3 px-3 rounded-lg">
+                    View More
+                </button>
+            
+
 
 
             <img src="images/pet.webp" alt="">
@@ -57,18 +62,22 @@
             <button class="px-3  py-2 text-white bg-[rgba(14,122,129,1)] rounded-md">Sort by Price</button>
         </div>
 
-        <div class=" w-9/12 mx-auto flex flex-row mb-5 ">
-            <div id="card" class=" grid grid-cols-1 m md:grid-cols-2 lg:grid-cols-3 gap-5 py-10">
-                <!-- cards will go here -->
+
+
+        <div  class="flex scroll-div">
+            <div class=" w-8/12 mx-auto flex flex-row mb-5 ">
+                <div id="card" class=" grid grid-cols-1 m md:grid-cols-2 lg:grid-cols-3 gap-5 py-10">
+                    <!-- cards will go here -->
+                </div>
+
+
+
+
+
             </div>
 
-
-
-
-
-
-            <div class="card bg-base-100  bg-slate-200 ml-5 mt-10 shadow-sm rounded-sm">
-                <div class="px-20 py-20 flex  flex-col">
+            <div class=" w-2/12 mx-auto card bg-base-100   bg-slate-200  mt-10 shadow-sm rounded-sm">
+                <div id="sideBar" class="grid grid-cols-2  ">
 
 
 
@@ -82,7 +91,25 @@
         </div>
 
 
+
     </main>
+    <!-- Open the modal using ID.showModal() method -->
+    <button id="showModalData" class="btn hidden" onclick="my_modal_1.showModal()">open modal</button>
+    <dialog id="my_modal_1" class="modal rounded-md">
+        <div class="modal-box">
+            <div id="modal-content">
+
+            </div>
+            <div class="modal-action mb-3 mx-3 py-1.5 rounded-md text-center bg-gray-200">
+                <form method="dialog ">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn text-[rgba(14,122,129,1)] font-bold ">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+
     <footer class="bg-black p-10  flex flex-col md:flex-row  md:p-20 justify-around text-white  ">
         <div class="text-center md:text-left ">
             <div class="flex items-center gap-3 mb-8 md:justify-start  justify-center ">
